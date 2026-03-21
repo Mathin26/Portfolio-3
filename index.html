@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leblesy</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #111;
+      color: #f4f4f4;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 3rem 1.5rem;
+      gap: 2.5rem;
+    }
+    header {
+      width: min(100%, 880px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.8rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.25rem;
+      letter-spacing: 0.05em;
+    }
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin-left: 1.1rem;
+      font-size: 0.92rem;
+      font-weight: 500;
+      padding: 0.38rem 0.65rem;
+      border-radius: 0.35rem;
+      transition: background 150ms ease, color 150ms ease;
+    }
+    nav a:hover,
+    nav a:focus-visible {
+      background: #333;
+      color: #fff;
+      outline: 2px solid #777;
+      outline-offset: 2px;
+    }
+    main {
+      width: min(100%, 880px);
+      display: grid;
+      place-items: center;
+      gap: 1.4rem;
+      text-align: center;
+    }
+    .links {
+      display: grid;
+      width: min(100%, 640px);
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1rem;
+    }
+    .link-card {
+      background: #1b1b1b;
+      border: 1px solid #2e2e2e;
+      padding: 1rem;
+      border-radius: 0.6rem;
+      text-decoration: none;
+      color: #e8e8e8;
+      transition: transform 160ms ease, border-color 160ms ease;
+    }
+    .link-card:hover {
+      transform: translateY(-2px);
+      border-color: #666;
+    }
+    .link-card strong {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-size: 1rem;
+    }
+    footer {
+      margin-top: auto;
+      color: #888;
+      font-size: 0.85rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Leblesy</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <p style="font-size:1.1rem;line-height:1.5;max-width:720px;">A minimalistic starting hub for your favourite links, in a grey, black and white theme.</p>
+
+    <section class="links" aria-label="Featured websites">
+      <a href="https://pso.leblesy.com" class="link-card" target="_blank" rel="noopener noreferrer">
+        <strong>GitHub</strong>
+        Open-source platform for code and collaboration.
+      </a>
+      <a href="https://cactar.leblesy.com" class="link-card" target="_blank" rel="noopener noreferrer">
+        <strong>LinkedIn</strong>
+        Professional networking and career connections.
+      </a>
+      <a href="https://chat.leblesy.com" class="link-card" target="_blank" rel="noopener noreferrer">
+        <strong>Google</strong>
+        Search engine and all-around internet workspace.
+      </a>
+    <!-- <a href="https://www.twitter.com" class="link-card" target="_blank" rel="noopener noreferrer">
+      <strong>Twitter</strong>
+      News, microblogging, and realtime discussions.
+    </a> -->
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 Leblesy • Built with minimal style
+  </footer>
+</body>
+</html>
